@@ -12,8 +12,8 @@ body{
 .main-block{  
     border: solid  rgba(0, 0, 0, 0.616);
     background-color: rgb(185, 199, 199);
-    max-width: 70rem;
-    width: 70rem;
+    max-width: 75%;
+    width: 75%; 
     margin: 2rem auto;
     border-radius: 0.5rem;
     font-size: 1.2rem;
@@ -24,7 +24,7 @@ body{
 }
 
 .slider-block{
-    max-width: 90%;
+    max-width: 75%;
     margin: 2rem auto;
 
     overflow: hidden; 
@@ -87,7 +87,7 @@ body{
     height: 1rem;
     margin: 6px;
     cursor: pointer;
-    background-color: #59dee7;
+    background-color:#25282A;
     border-radius: 50%;
 
 }
@@ -98,29 +98,10 @@ body{
 }
 
 
-/**/
-.r1:checked ~ .info-block .bar-block .bar {
-    border:  solid  rgba(0, 0, 0, 0.616);;
-    background-color: rgb(185, 199, 199);;
+
+.bar:focus{
+    background-color: #c01f62;
 }
-
-.r2:checked ~ .info-block .bar-block .bar {
-    border:  solid  rgba(0, 0, 0, 0.616);;
-    background-color: rgb(185, 199, 199);;
-}
-
-.r3:checked ~ .info-block .bar-block .bar {
-    border:  solid  rgba(0, 0, 0, 0.616);;
-    background-color: rgb(185, 199, 199);;
-}
-
-.r4:checked ~ .info-block .bar-block .bar {
-    border:  solid  rgba(0, 0, 0, 0.616);;
-    background-color: rgb(185, 199, 199);;
-}
-
-/**/
-
 
  .radioinput-text{
     display: none;
@@ -145,3 +126,23 @@ body{
  #r4:checked~.info-block .text-block .text-lb {
      transform: translateX(-300%);
  }
+
+
+
+
+ @media screen and (max-width: 768px) {
+    .info-block{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .text-block{
+        text-align:left;
+    }
+       
+
+ }
+
+
