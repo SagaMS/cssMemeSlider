@@ -87,21 +87,43 @@ body{
     height: 1rem;
     margin: 6px;
     cursor: pointer;
-    background-color:#25282A;
+    background-color:#000000;
+    border:  0.2rem solid #000000; 
     border-radius: 50%;
-
+    transition: all 0.1s linear;
 }
 
-.bar:hover{
-    border:  solid  rgba(0, 0, 0, 0.616);;
-    background-color: rgb(185, 199, 199);;
+ .bar:hover{
+    background-color: #a0da1b;
+}
+
+.bar:active{
+    background-color: #1593b9;
+}
+
+
+#r1:checked~.info-block .bar-block .bar1,
+#r2:checked~.info-block .bar-block .bar2,
+#r3:checked~.info-block .bar-block .bar3,
+#r4:checked~.info-block .bar-block .bar4
+{
+ 
+    background-color:#B9C7C7;
+}
+
+
+#r1:checked~.info-block .bar-block .bar:hover,
+#r2:checked~.info-block .bar-block .bar:hover,
+#r3:checked~.info-block .bar-block .bar:hover,
+#r4:checked~.info-block .bar-block .bar:hover
+{
+    border:  0.2rem solid #a0da1b; 
+  
 }
 
 
 
-.bar:focus{
-    background-color: #c01f62;
-}
+
 
  .radioinput-text{
     display: none;
@@ -139,6 +161,7 @@ body{
     }
 
     .text-block{
+        margin: 1rem auto;
         text-align:left;
     }
        
