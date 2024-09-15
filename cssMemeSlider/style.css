@@ -150,7 +150,28 @@ body{
 
 
 
+
+
+
+ @media screen and (max-width: 1075px) {
+    .bar-block{
+        max-width: 17rem;
+        width: 17rem;
+    }
+ }
+
+
  @media screen and (max-width: 768px) {
+
+    .bar-block{
+        max-width:100%;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
     .info-block{
         flex-direction: column-reverse;
         align-items: center;
@@ -167,3 +188,13 @@ body{
  }
 
 
+ 
+
+ @media  screen and (max-width:320px) {
+
+    .bar-block{
+        max-width:100%;
+        width:100%;
+    
+    }
+ }
